@@ -4,7 +4,6 @@ const twentyApiKey = process.env.TWENTY_API_KEY
 
 async function batchDeleteUsers() {
   try {
-    // Get the first 100 users
     const options = {
       method: 'GET',
       url: 'https://api.twenty.com/rest/people',
