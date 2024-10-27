@@ -14,7 +14,6 @@ async function batchDeleteUsers() {
     }
 
     const { data } = await axios.request(options)
-    console.log('data :', data)
     const userIds = data.data.people.map(user => user.id)
 
     // Batch delete the users
